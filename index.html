@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Elio's Training Grounds</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* slightly above center */
+      background: linear-gradient(135deg, #ff7f50, #1e90ff, #32cd32);
+      background-size: 400% 400%;
+      animation: gradientShift 8s ease infinite;
+      font-family: 'Arial', sans-serif;
+      overflow: hidden;
+    }
+
+    @keyframes gradientShift {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+
+    h1 {
+      margin-top: 20vh; /* slightly above middle */
+      font-size: 3em;
+      color: white;
+      text-shadow: 2px 2px 8px black;
+      animation: floatText 3s ease-in-out infinite alternate;
+    }
+
+    @keyframes floatText {
+      0% {transform: translateY(0px);}
+      50% {transform: translateY(-15px);}
+      100% {transform: translateY(0px);}
+    }
+  </style>
+</head>
+<body>
+  <h1>Elio's Training Grounds</h1>
+</body>
+</html>
