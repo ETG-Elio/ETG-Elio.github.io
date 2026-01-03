@@ -1,32 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elio's Training Grounds</title>
   <style>
+    /* Body and Gradient Background */
     body {
       margin: 0;
       height: 100vh;
       display: flex;
-      justify-content: center;
-      align-items: flex-start; /* slightly above center */
-      background: linear-gradient(135deg, #ff7f50, #1e90ff, #32cd32);
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      background: linear-gradient(135deg, #ff7f50, #1e90ff, #32cd32, #ff69b4);
       background-size: 400% 400%;
-      animation: gradientShift 8s ease infinite;
+      animation: gradientShift 12s ease infinite;
       font-family: 'Arial', sans-serif;
-      overflow: hidden;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+      padding: 5vh 2vw;
     }
 
+    /* Gradient Animation */
     @keyframes gradientShift {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
 
+    /* Main Heading */
     h1 {
-      margin-top: 20vh; /* slightly above middle */
+      margin-top: 15vh;
       font-size: 3em;
-      color: white;
-      text-shadow: 2px 2px 8px black;
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
       animation: floatText 3s ease-in-out infinite alternate;
     }
 
@@ -35,9 +43,36 @@
       50% {transform: translateY(-15px);}
       100% {transform: translateY(0px);}
     }
+
+    /* Subtext Paragraph */
+    p {
+      max-width: 800px;
+      margin-top: 2vh;
+      font-size: 1.2em;
+      line-height: 1.6em;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.5);
+    }
+
+    /* Responsive text scaling */
+    @media (max-width: 768px) {
+      h1 {font-size: 2.2em;}
+      p {font-size: 1em;}
+    }
+    @media (max-width: 480px) {
+      h1 {font-size: 1.8em;}
+      p {font-size: 0.9em;}
+    }
   </style>
 </head>
 <body>
   <h1>Elio's Training Grounds</h1>
+  <p>
+    ETG - Elio’s Training Grounds.<br>
+    We are a community for VRFS and we make arenas/maps in the Virtual Reality game VRFS. 
+    We simply make maps free of cost, no credits, no nothing. 
+    The original creator/founder of this idea is Elio (elio63091 on Discord). 
+    This is an operation to try and get everyone on VRFS better skill-wise and make sure that 
+    they can progress and be better so that they have chances they would never have.
+  </p>
 </body>
 </html>
