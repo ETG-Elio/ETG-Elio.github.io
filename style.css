@@ -12,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 
-/* --- Container for Content --- */
+/* --- Container --- */
 .container {
   max-width: 900px;
   padding: 40px 50px;
@@ -24,7 +24,7 @@ body {
   animation: fadeIn 1.5s ease forwards;
 }
 
-/* --- Heading Styling --- */
+/* --- Heading --- */
 h1 {
   font-size: 3rem;
   font-weight: 700;
@@ -36,7 +36,7 @@ h1 {
   animation: floatIn 1.5s ease forwards;
 }
 
-/* --- Paragraph Styling --- */
+/* --- Paragraph --- */
 p {
   font-size: 1.2rem;
   line-height: 1.8rem;
@@ -46,6 +46,32 @@ p {
   transform: translateY(20px);
   animation: floatIn 1.5s ease forwards;
   animation-delay: 0.5s;
+}
+
+/* --- Email Link --- */
+.email-link {
+  color: #ffcc00;
+  text-decoration: underline;
+}
+
+/* --- Button --- */
+.button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: #ffffff;
+  background-color: #ff7f50;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #ff6347;
+  transform: translateY(-3px);
 }
 
 /* --- Animations --- */
@@ -59,7 +85,7 @@ p {
   100% {opacity: 1; transform: translateY(0);}
 }
 
-/* --- Responsive Adjustments --- */
+/* --- Responsive --- */
 @media (max-width: 768px) {
   h1 {font-size: 2.5rem;}
   p {font-size: 1rem; line-height: 1.5rem;}
